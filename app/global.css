@@ -31,6 +31,17 @@
 
 html {
 	min-width: 360px;
+	background-color: white;
+	color: #463436;
+}
+
+.textBlanc {
+	@apply text-white;
+}
+
+.no-scrollbar {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }
 
 @font-face {
@@ -39,6 +50,25 @@ html {
 		format("woff2");
 	font-weight: normal;
 	font-style: normal;
+}
+
+@font-face {
+	font-family: "Copernicus Bold";
+	src: url("/Users/paulmerandon/paulmerandon/public/fonts/copernicus-font-family-1721393359-0/CopernicusTrial-Bold-BF6616045097aac.ttf")
+		format("ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+h2 {
+	font-size: 24px;
+	font-family: "Copernicus Bold";
+	color: #463436;
+}
+
+a {
+	color: #463436;
+	font-family: "JetBrains Mono";
 }
 
 .prose .anchor {

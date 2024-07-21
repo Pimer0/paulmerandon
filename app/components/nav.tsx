@@ -1,40 +1,59 @@
-import Link from 'next/link'
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import {
+	HomeIcon,
+	FolderIcon,
+	UserIcon,
+	EnvelopeIcon,
+} from "@heroicons/react/24/outline";
 
 const navItems = {
-  '/': {
-    name: 'home',
-  },
-  '/blog': {
-    name: 'blog',
-  },
-  'https://vercel.com/templates/next.js/portfolio-starter-kit': {
-    name: 'deploy',
-  },
-}
+	"/": {
+		name: "Home",
+		icon: HomeIcon,
+	},
+	"/Projets": {
+		name: "Projets",
+		icon: FolderIcon,
+	},
+	"/Me": {
+		name: "Me",
+		icon: UserIcon,
+	},
+	"/Contact": {
+		name: "Contact",
+		icon: EnvelopeIcon,
+	},
+};
 
 export function Navbar() {
-  return (
-    <aside className="-ml-[8px] mb-16 tracking-tight">
-      <div className="lg:sticky lg:top-20">
-        <nav
-          className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
-          id="nav"
-        >
-          <div className="flex flex-row space-x-0 pr-10">
-            {Object.entries(navItems).map(([path, { name }]) => {
-              return (
-                <Link
-                  key={path}
-                  href={path}
-                  className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
-                >
-                  {name}
-                </Link>
-              )
-            })}
-          </div>
-        </nav>
-      </div>
-    </aside>
-  )
+	const pathname = usePathname();
+
+	return (
+		<nav className="fixed bottom-0 left-0 right-0 bg-transparent bg-opacity-20 backdrop-blur-sm backdrop-filter pt-4 pb-4 ">
+			<div className="overflow-x-auto no-scrollbar">
+				<div className="flex items-center min-w-max">
+					{Object.entries(navItems).map(([path, { name, icon: Icon }]) => {
+						const isActive = pathname === path;
+						return (
+							<Link
+								key={path}
+								href={path}
+								className={`transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex items-center relative py-1 px-2 m-1 ${
+									isActive
+										? "bg-[#463436] textBlanc"
+										: "bg-[#463436] textBlanc opacity-50"
+								} rounded-[20px]`}
+							>
+								<Icon className="w-5 h-5 mr-2 text-white group-hover:text-white" />
+								{name}
+							</Link>
+						);
+					})}
+				</div>
+			</div>
+		</nav>
+	);
 }
