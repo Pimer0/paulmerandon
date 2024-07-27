@@ -8,6 +8,7 @@ import {
 	UserIcon,
 	EnvelopeIcon,
 } from "@heroicons/react/24/outline";
+import path from "path";
 
 const navItems = {
 	"/": {
@@ -21,6 +22,7 @@ const navItems = {
 	"/Me": {
 		name: "Me",
 		icon: UserIcon,
+		path: "/Me",
 	},
 	"/Contact": {
 		name: "Contact",
