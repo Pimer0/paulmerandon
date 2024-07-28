@@ -22,8 +22,21 @@ export default function Page() {
 				height={375}
 			/>
 			<p className={`mb-4 ${jetBrainsMono.className}`}>
-				{`Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam atque, veritatis culpa porro itaque eius quod quas deleniti vitae accusamus sapiente est, excepturi animi, tempore eos. Aut ad cumque sequi!`}
+				{`Enchanté, Paul Mérandon, étudiant au CESI en développement informatique avec une appétence pour le développement front-end et une grande curiosité pour le développement back-end.`}
 			</p>
+			<br />
+			<p className={`mb-4 ${jetBrainsMono.className}`}>
+				{`Fort de plusieurs projets qui on sollicité chez moi la résolution de problème, la logique, et le travail d’équipe, je cherche le prochain sujet qui viendra me titiller les neurones et me challenger.`}
+			</p>
+			<br />
+			<p className={`mb-4 ${jetBrainsMono.className}`}>
+				{`Avide de savoir, explorateur, j’aimerais tout connaitre du développement, et je travail d’arrache pied pour y arriver.`}
+			</p>
+			<br />
+			<p className={`mb-4 ${jetBrainsMono.className}`}>
+				{`Je t’ai dit que je suis aussi diplômé d’un master économie-gestion ?`}
+			</p>
+			<br />
 			<h2
 				className={`mb-8 text-xl tracking-tighter ${copernicusBold.className}`}
 			>
