@@ -17,30 +17,41 @@ export default function Page() {
 				Un développeur à fond.
 			</h2>
 			<p className={`mb-4 ${jetBrainsMono.className}`}>
-				{`Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam atque, veritatis culpa porro itaque eius quod quas deleniti vitae accusamus sapiente est, excepturi animi, tempore eos. Aut ad cumque sequi!`}
+				{`Bricoleur, kiffeur, aventurien, que sais-je encore… Ai-je ton attention ? Si tu veux en savoir plus sur moi, il va falloir te balader un peu sur ce site. Y’en a pour tout le monde, un peu de front, un peu de back, mais aussi de l’animation et de la 3D. Bienvenu chez moi !`}
 			</p>
 			<Projet
 				titre="Lexique du crédit - Cofidis"
-				srcImage="/assets/cofidis-lexique.png"
-				widthImage={370}
-				heightImage={370}
-				altImage="Description de l'image"
+				srcImage="/assets/cofidis.mp4"
 				lienProjet="https://lien_vers_un_autre_projet.com"
 			/>
 			<Projet
-				titre="Lexique du crédit - Cofidis"
-				srcImage="/assets/cofidis-lexique.png"
-				widthImage={370}
-				heightImage={370}
-				altImage="Description de l'image"
+				titre="pimerMe"
+				srcImage="/assets/pimerMe.mp4"
 				lienProjet="https://lien_vers_un_autre_projet.com"
 			/>
 			<Projet
-				titre="Lexique du crédit - Cofidis"
-				srcImage="/assets/cofidis-lexique.png"
-				widthImage={370}
-				heightImage={370}
-				altImage="Description de l'image"
+				titre="Service de micro blogging"
+				srcImage="/assets/twitterClone.mp4"
+				lienProjet="https://lien_vers_un_autre_projet.com"
+			/>
+			<Projet
+				titre="Application mobile de collection de véhicules - voitureDex"
+				srcImage="/assets/voitureDex.mp4"
+				lienProjet="https://lien_vers_un_autre_projet.com"
+			/>
+			<Projet
+				titre="API de gestion de tâches"
+				srcImage="/assets/apiTodo.mp4"
+				lienProjet="https://lien_vers_un_autre_projet.com"
+			/>
+			<Projet
+				titre="Refonte maillage interne - Cofidis"
+				srcImage="/assets/apiTodo.mp4"
+				lienProjet="https://lien_vers_un_autre_projet.com"
+			/>
+			<Projet
+				titre="Ce portfolio !"
+				srcImage="/assets/apiTodo.mp4"
 				lienProjet="https://lien_vers_un_autre_projet.com"
 			/>
 		</section>

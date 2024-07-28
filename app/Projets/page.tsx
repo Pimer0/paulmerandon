@@ -1,4 +1,6 @@
+import Skills from "app/Me/skills";
 import { copernicusBold, jetBrainsMono } from "../fonts";
+import Projet from "./projet";
 
 export const metadata = {
 	title: "Me",
@@ -13,6 +15,8 @@ export default function Page() {
 			>
 				Une idée de ce que je peux faire :
 			</h1>
+			{/* <Projet /> */}
+			<div>{/* <Skills /> */}</div>
 		</section>
 	);
 }

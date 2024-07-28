@@ -1,38 +1,29 @@
 import React from "react";
-import Image from "next/image";
 import LinksProjet from "./linksProjet";
 import TitleNivDeux from "./TitleNivDeux";
 
 interface ProjetProps {
 	titre: string;
 	srcImage: string;
-	widthImage: number;
-	heightImage: number;
-	altImage: string;
 	lienProjet: string;
-	
 }
 
-const Projet = ({
-	titre,
-	srcImage,
-	widthImage,
-	heightImage,
-	altImage,
-	lienProjet,
-	
-}: ProjetProps) => {
+const Projet = ({ titre, srcImage, lienProjet }: ProjetProps) => {
 	return (
 		<div className="my-8">
 			<TitleNivDeux text={titre} />
-			<Image
-				className="rounded-lg border border-gray-800 object-cover"
-				src={srcImage}
-				width={widthImage}
-				height={heightImage}
-				alt={altImage}
-			/>
-			<LinksProjet lien={lienProjet}/>
+			<video
+				className="border border-amber-950 rounded-2xl"
+				width="auto"
+				height="auto"
+				loop
+				autoPlay
+				muted
+				preload="auto"
+			>
+				<source src={srcImage} type="video/mp4" />
+			</video>
+			<LinksProjet lien={lienProjet} />
 		</div>
 	);
 };

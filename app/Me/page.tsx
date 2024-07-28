@@ -12,7 +12,7 @@ export default function Page() {
 			<h1
 				className={`mb-8 text-2xl tracking-tighter ${copernicusBold.className}`}
 			>
-				About me
+				À propos du gaillard
 			</h1>
 			<Image
 				className="border border-amber-950 rounded-2xl mb-8"
