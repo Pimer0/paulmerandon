@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { jetBrainsMono } from "../fonts";
 import { usePathname } from "next/navigation";
 import {
 	HomeIcon,
@@ -44,7 +45,9 @@ export function Navbar() {
 							<Link
 								key={path}
 								href={path}
-								className={`transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex items-center relative py-1 px-2 m-1 ${
+								className={`${
+									jetBrainsMono.className
+								} transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex items-center relative py-1 px-2 m-1 ${
 									isActive
 										? "bg-[#463436] textBlanc"
 										: "bg-[#463436] textBlanc opacity-50"
