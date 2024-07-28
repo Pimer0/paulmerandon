@@ -46,8 +46,8 @@ html {
 
 @font-face {
 	font-family: "JetBrains Mono";
-	src: url("/Users/paulmerandon/paulmerandon/public/fonts/JetBrainsMono-2.304/fonts/webfonts/JetBrainsMono-Regular.woff2")
-		format("woff2");
+	src: url("../public/fonts/JetBrainsMono-2.304/fonts/ttf/JetBrainsMono-Regular.ttf")
+		format("ttf");
 	font-weight: normal;
 	font-style: normal;
 }

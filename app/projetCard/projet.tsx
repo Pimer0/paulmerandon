@@ -20,6 +20,7 @@ const Projet = ({ titre, srcImage, lienProjet }: ProjetProps) => {
 				autoPlay
 				muted
 				preload="auto"
+				playsInline
 			>
 				<source src={srcImage} type="video/mp4" />
 			</video>
