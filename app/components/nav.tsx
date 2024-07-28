@@ -18,6 +18,7 @@ const navItems = {
 	"/Projets": {
 		name: "Projets",
 		icon: FolderIcon,
+		path: "/Projets",
 	},
 	"/Me": {
 		name: "Me",
@@ -27,6 +28,7 @@ const navItems = {
 	"/Contact": {
 		name: "Contact",
 		icon: EnvelopeIcon,
+		path: "/Contact",
 	},
 };
 

@@ -29,7 +29,40 @@ export default function Page() {
 			>
 				Mes compétences, à votre service.
 			</h2>
-			<Skills srcImage="/assets/JS.png" altImage="Js" />
+			<div className="flex flex-row gap-2 flex-wrap">
+				<Skills
+					srcImage="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg"
+					altImage="Ts"
+				/>
+				<Skills
+					srcImage="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+					altImage="react"
+				/>
+				<Skills
+					srcImage="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+					altImage="NextJs"
+				/>
+				<Skills
+					srcImage="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+					altImage="Tailwind"
+				/>
+				<Skills
+					srcImage="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg"
+					altImage="Framer"
+				/>
+				<Skills
+					srcImage="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-plain-wordmark.svg"
+					altImage=".NET"
+				/>
+				<Skills
+					srcImage="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-plain.svg"
+					altImage="C#"
+				/>
+				<Skills
+					srcImage="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+					altImage="Postgres"
+				/>
+			</div>
 		</section>
 	);
 }
