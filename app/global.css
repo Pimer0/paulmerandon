@@ -54,10 +54,17 @@ html {
 
 @font-face {
 	font-family: "Copernicus Bold";
-	src: url("/Users/paulmerandon/paulmerandon/public/fonts/copernicus-font-family-1721393359-0/CopernicusTrial-Bold-BF6616045097aac.ttf")
+	src: url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap")
 		format("ttf");
 	font-weight: normal;
 	font-style: normal;
+}
+
+h1 {
+	font-size: 32px;
+	font-family: "Copernicus Bold";
+	color: #463436;
+	font-weight: 800;
 }
 
 h2 {

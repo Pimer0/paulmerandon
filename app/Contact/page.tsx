@@ -1,4 +1,4 @@
-import { copernicusBold, jetBrainsMono } from "../fonts";
+import { playfairDisplay, jetBrainsMono } from "../fonts";
 import Card from "./card";
 
 export const metadata = {
@@ -10,7 +10,7 @@ export default function Page() {
 	return (
 		<section>
 			<h1
-				className={`mb-8 text-2xl tracking-tighter ${copernicusBold.className}`}
+				className={`mb-8 text-2xl tracking-tighter ${playfairDisplay.className}`}
 			>
 				On se rencarde ?
 			</h1>

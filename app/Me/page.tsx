@@ -1,4 +1,4 @@
-import { copernicusBold, jetBrainsMono } from "../fonts";
+import { playfairDisplay, jetBrainsMono } from "../fonts";
 import Image from "next/image";
 import Skills from "./skills";
 export const metadata = {
@@ -10,7 +10,7 @@ export default function Page() {
 	return (
 		<section>
 			<h1
-				className={`mb-8 text-2xl tracking-tighter ${copernicusBold.className}`}
+				className={`mb-8 text-2xl tracking-tighter ${playfairDisplay.className}`}
 			>
 				À propos du gaillard
 			</h1>
@@ -26,19 +26,19 @@ export default function Page() {
 			</p>
 			<br />
 			<p className={`mb-4 ${jetBrainsMono.className}`}>
-				{`Fort de plusieurs projets qui on sollicité chez moi la résolution de problème, la logique, et le travail d’équipe, je cherche le prochain sujet qui viendra me titiller les neurones et me challenger.`}
+				{`Fort de plusieurs projets qui ont sollicité chez moi la résolution de problèmes, la logique, et le travail d'équipe, je cherche le prochain sujet qui viendra me titiller les neurones et me challenger.`}
 			</p>
 			<br />
 			<p className={`mb-4 ${jetBrainsMono.className}`}>
-				{`Avide de savoir, explorateur, j’aimerais tout connaitre du développement, et je travail d’arrache pied pour y arriver.`}
+				{`Avide de savoir, j'aimerais tout connaître du développement, et je travaille d'arrache-pied pour y arriver.`}
 			</p>
 			<br />
 			<p className={`mb-4 ${jetBrainsMono.className}`}>
-				{`Je t’ai dit que je suis aussi diplômé d’un master économie-gestion ?`}
+				{`Je vous ai dit que je suis aussi diplômé d'un master économie-gestion ?`}
 			</p>
 			<br />
 			<h2
-				className={`mb-8 text-xl tracking-tighter ${copernicusBold.className}`}
+				className={`mb-8 text-xl tracking-tighter ${playfairDisplay.className}`}
 			>
 				Mes compétences, à votre service.
 			</h2>

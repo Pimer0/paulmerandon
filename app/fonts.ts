@@ -5,7 +5,7 @@ export const jetBrainsMono = localFont({
   display: 'swap',
 })
 
-export const copernicusBold = localFont({
-  src: '../public/fonts/copernicus-font-family-1721393359-0/CopernicusTrial-Bold-BF6616045097aac.ttf',
+export const playfairDisplay = localFont({
+  src: '../public/fonts/Playfair-Display/static/PlayfairDisplay-Regular.ttf',
   display: 'swap',
 })

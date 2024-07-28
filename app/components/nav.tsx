@@ -8,7 +8,6 @@ import {
 	UserIcon,
 	EnvelopeIcon,
 } from "@heroicons/react/24/outline";
-import path from "path";
 
 const navItems = {
 	"/": {
@@ -36,7 +35,7 @@ export function Navbar() {
 	const pathname = usePathname();
 
 	return (
-		<nav className="fixed bottom-0 left-0 right-0 bg-transparent bg-opacity-20 backdrop-blur-sm backdrop-filter pt-4 pb-4 ">
+		<nav className="fixed bottom-0 left-0 right-0 bg-transparent bg-opacity-20 md:bg-opacity-0 backdrop-blur-sm md:backdrop-blur-none backdrop-filter md:backdrop-filter-none pt-4 pb-4 z-50">
 			<div className="overflow-x-auto no-scrollbar">
 				<div className="flex items-center min-w-max">
 					{Object.entries(navItems).map(([path, { name, icon: Icon }]) => {
