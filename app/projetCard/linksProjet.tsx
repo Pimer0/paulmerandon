@@ -11,7 +11,7 @@ const LinksProjet: React.FC<LinksProjetProps> = ({ lien }) => {
 	return (
 		<div className="flex flex-row items-center mb-2 mt-4">
 			<ArrowUpRightIcon className="w-5 h-5 mr-2" stroke="#463436" />
-			<Link key={lien} href={lien}>
+			<Link className={`${jetBrainsMono.className}`} key={lien} href={lien}>
 				Vers le projet
 			</Link>
 		</div>
