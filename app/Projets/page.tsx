@@ -163,7 +163,7 @@ export default function Page() {
 				lien="https://github.com/Pimer0/paulmerandon"
 				id="portfolio"
 				titre="Ce portfolio !"
-				paragraph="Utilisation de Next.js avec Framer motion pour les animation, et threeJs pour les modèles 3D créer de toutes pièces. Réalisation des maquettes ainsi que la charte graphique, et déploiement sur Vercel."
+				paragraph="Utilisation de Next.js avec Framer motion pour les animation, et threeJs pour les modèles 3D créer de toutes pièces. Réalisation des maquettes ainsi que la charte graphique, les svg oranges sont de moi et le déploiement est effectué sur Vercel."
 			/>
 			<div className="flex flex-row gap-2 flex-wrap">
 				<Skills

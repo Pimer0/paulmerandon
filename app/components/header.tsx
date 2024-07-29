@@ -13,8 +13,8 @@ const Header: React.FC<HeaderProps> = ({}) => {
 						className="p-2"
 						src="/assets/logoMe.svg"
 						alt="logo"
-						width={75}
-						height={75}
+						width={85}
+						height={85}
 					/>
 				</Link>
 			</div>

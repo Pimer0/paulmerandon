@@ -22,19 +22,38 @@ export default function Page() {
 				height={375}
 			/>
 			<p className={`mb-4 ${jetBrainsMono.className}`}>
-				{`Enchanté, Paul Mérandon, étudiant au CESI en développement informatique avec une appétence pour le développement front-end et une grande curiosité pour le développement back-end.`}
+				Enchanté, Paul Mérandon, <strong>étudiant au CESI</strong> en
+				développement informatique avec{" "}
+				<strong>une appétence pour le développement front-end</strong> et{" "}
+				<strong>une grande curiosité pour le développement back-end.</strong>
 			</p>
 			<br />
 			<p className={`mb-4 ${jetBrainsMono.className}`}>
-				{`Fort de plusieurs projets qui ont sollicité chez moi la résolution de problèmes, la logique, et le travail d'équipe, je cherche le prochain sujet qui viendra me titiller les neurones et me challenger.`}
+				Fort de plusieurs projets qui ont sollicité chez moi{" "}
+				<strong>
+					la résolution de problèmes, la logique, et le travail d'équipe,
+				</strong>{" "}
+				je cherche le prochain sujet qui viendra{" "}
+				<strong>me titiller les neurones et me challenger.</strong>
 			</p>
 			<br />
 			<p className={`mb-4 ${jetBrainsMono.className}`}>
-				{`Avide de savoir, j'aimerais tout connaître du développement, et je travaille d'arrache-pied pour y arriver.`}
+				<strong>Avide de savoir,</strong> j'aimerais tout connaître du
+				développement, et je travaille d'arrache-pied pour y arriver.
 			</p>
 			<br />
 			<p className={`mb-4 ${jetBrainsMono.className}`}>
-				{`Je vous ai dit que je suis aussi diplômé d'un master économie-gestion ?`}
+				J'aime:{" "}
+				<strong>
+					magic the gathering, le jiu jitsu brésilien, la culture internet, et
+					le développement informatique
+				</strong>{" "}
+				bien sûr.
+			</p>
+			<br />
+			<p className={`mb-4 ${jetBrainsMono.className}`}>
+				Je vous ai dit que je suis aussi{" "}
+				<strong>diplômé d'un master économie-gestion</strong> ?
 			</p>
 			<br />
 			<h2
