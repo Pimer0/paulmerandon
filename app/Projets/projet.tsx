@@ -1,30 +1,23 @@
 import Skills from "app/Me/skills";
 import React from "react";
 import { playfairDisplay, jetBrainsMono } from "../fonts";
+import Link from "next/link";
 
 interface ProjetProps {
 	titre: string;
-	srcImage: string;
+	lien: string;
 	paragraph: string;
 	id: string;
 }
 
-const Projet = ({ titre, srcImage, paragraph, id }: ProjetProps) => {
+const Projet = ({ titre, paragraph, lien, id }: ProjetProps) => {
 	return (
 		<div id={id} className="my-8">
-			<h2>{titre}</h2>
-			<video
-				className="border border-amber-950 rounded-2xl"
-				width="auto"
-				height="auto"
-				loop
-				autoPlay
-				muted
-				preload="auto"
-                playsInline
-			>
-				<source src={srcImage} type="video/mp4" />
-			</video>
+			<h2 className={`mt-6 mb-4 ${playfairDisplay.className}`}>
+				<Link className={`mt-6 mb-4 ${playfairDisplay.className}`} href={lien}>
+					{titre}
+				</Link>
+			</h2>
 
 			<p className={`mt-6 mb-4 ${jetBrainsMono.className}`}>{paragraph}</p>
 		</div>

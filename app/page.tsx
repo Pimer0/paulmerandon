@@ -1,7 +1,10 @@
 import { jetBrainsMono } from "../app/fonts";
 import { playfairDisplay } from "../app/fonts";
-
+import LinksProjet from "./projetCard/linksProjet";
 import Projet from "./projetCard/projet";
+import TitleNivDeux from "./projetCard/TitleNivDeux";
+import next from "next";
+import Image from "next/image";
 
 export default function Page() {
 	return (
@@ -46,14 +49,24 @@ export default function Page() {
 			/>
 			<Projet
 				titre="Refonte maillage interne - Cofidis"
-				srcImage="/assets/apiTodo.mp4"
+				srcImage="/assets/maillageCof.mp4"
 				lienProjet="/Projets/#refonteMaillage"
 			/>
-			<Projet
-				titre="Ce portfolio !"
-				srcImage="/assets/apiTodo.mp4"
-				lienProjet="/Projets/#portfolio"
-			/>
+			<div className="my-8">
+				<TitleNivDeux text="Mise en conformité de l'accessibilité - Cofidis" />
+				<Image width={200} height={200} src={"/assets/oeil.svg"} alt="oeil" />
+				<LinksProjet lien="/Projets/#accessibilite" />
+			</div>
+			<div className="my-8">
+				<TitleNivDeux text="Ce portfolio !" />
+				<Image
+					width={200}
+					height={200}
+					src={"/assets/spirale.svg"}
+					alt="spirale"
+				/>
+				<LinksProjet lien="/Projets/#portfolio" />
+			</div>
 		</section>
 	);
 }

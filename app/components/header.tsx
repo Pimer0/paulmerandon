@@ -9,7 +9,13 @@ const Header: React.FC<HeaderProps> = ({}) => {
 		<header className="fixed top-0 left-0 w-full z-50 bg-transparent bg-opacity-60 backdrop-blur-sm backdrop-filter">
 			<div className="Logo">
 				<Link href="/">
-					<Image src="/assets/Logo.svg" alt="logo" width={75} height={75} />
+					<Image
+						className="p-2"
+						src="/assets/logoMe.svg"
+						alt="logo"
+						width={75}
+						height={75}
+					/>
 				</Link>
 			</div>
 		</header>
