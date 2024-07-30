@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import React from "react";
 import Image from "next/image";
 import { playfairDisplay, jetBrainsMono } from "../fonts";
@@ -14,7 +17,12 @@ interface CardProps {
 
 const Card = ({ niveauUn, niveauDeux, path }: CardProps) => {
 	return (
-		<div className="my-8 bg-[#463436] p-2 border rounded-2xl flex flex-col">
+		<motion.div
+			whileHover={{ scale: 1.2 }}
+			whileTap={{ scale: 0.9 }}
+			transition={{ type: "spring", stiffness: 400, damping: 17 }}
+			className="my-8 bg-[#463436] p-2 border rounded-2xl flex flex-col"
+		>
 			<div className="flex flex-col items-start w-full px-4 mb-6 mt-6">
 				<h2
 					className={`w-full textBlanc mb-4 text-xl tracking-tighter ${playfairDisplay.className}`}
@@ -32,7 +40,7 @@ const Card = ({ niveauUn, niveauDeux, path }: CardProps) => {
 					</Link>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
