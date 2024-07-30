@@ -77,13 +77,12 @@ a {
 	color: #463436;
 	font-family: "JetBrains Mono";
 }
+
 .bg-dynamic {
-	background-image: url("");
 }
 
 .prose .anchor {
 	@apply absolute invisible no-underline;
-
 	margin-left: -1em;
 	padding-right: 0.5em;
 	width: 80%;

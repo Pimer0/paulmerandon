@@ -44,11 +44,11 @@ export function Navbar() {
 						const isActive = pathname === path;
 						return (
 							<motion.div
+								key={path} // Déplacez la clé ici
 								whileTap={{ scale: 0.9 }}
 								transition={{ type: "spring", stiffness: 400, damping: 17 }}
 							>
 								<Link
-									key={path}
 									href={path}
 									className={`${
 										jetBrainsMono.className

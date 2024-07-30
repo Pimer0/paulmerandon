@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 interface ExampleProps {
@@ -10,13 +10,19 @@ interface ExampleProps {
 
 export const Example = ({ srcImage }: ExampleProps) => {
 	const constraintsRef = useRef<HTMLDivElement | null>(null);
+	const [randomTop, setRandomTop] = useState(0);
+	const [randomLeft, setRandomLeft] = useState(0);
 
 	const getRandomInt = (min: number, max: number) => {
 		return Math.floor(Math.random() * (max - min + 1)) + min;
 	};
 
-	const randomTop = getRandomInt(0, window.innerHeight - 192);
-	const randomLeft = getRandomInt(0, window.innerWidth - 192);
+	useEffect(() => {
+		if (typeof window !== "undefined") {
+			setRandomTop(getRandomInt(0, window.innerHeight - 192));
+			setRandomLeft(getRandomInt(0, window.innerWidth - 192));
+		}
+	}, []);
 
 	return (
 		<div className="hidden lg:block">
