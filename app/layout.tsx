@@ -15,13 +15,13 @@ export const metadata: Metadata = {
 		default: "Paul Mérandon",
 		template: "%s | Paul Mérandon",
 	},
-	description: "This is my portfolio.",
+	description: "Mon humble portfolio.",
 	openGraph: {
 		title: "Paul Mérandon",
 		description: "Mon portfolio.",
 		url: baseUrl,
 		siteName: "Paul Mérandon",
-		locale: "en_US",
+		locale: "fr_FR",
 		type: "website",
 	},
 	robots: {
@@ -46,13 +46,14 @@ export default function RootLayout({
 }) {
 	return (
 		<html
-			lang="en"
+			lang="fr"
 			className={cx(
 				"text-black bg-white dark:text-white dark:bg-black",
 				GeistSans.variable,
 				GeistMono.variable
 			)}
 		>
+			<link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
 			<body className="antialiased pt-[75px]">
 				<Header />
 				<main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0 max-w-xl mx-4 lg:mx-auto">
