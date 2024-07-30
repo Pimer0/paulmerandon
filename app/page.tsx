@@ -14,34 +14,21 @@ export default function Page() {
 	return (
 		<section>
 			<motion.div
-				animate={{ x: [-1000, 0] }}
+				whileInView={{ opacity: 1, x: 0 }}
 				transition={{ duration: 1 }}
+				initial={{ opacity: 0, x: -100 }}
 				className="my-8"
 			>
 				<h1
 					className={`mb-8 text-2xl tracking-tighter ${playfairDisplay.className}`}
 				>
 					Bonjour, vous êtes chez Paul Mérandon
-				</h1>
-			</motion.div>
-			<motion.div
-				animate={{ x: [-1000, 0] }}
-				transition={{ duration: 2 }}
-				className="my-8"
-			>
-				{" "}
+				</h1>{" "}
 				<h2
 					className={`mb-8 text-xl tracking-tighter ${playfairDisplay.className}`}
 				>
 					Un développeur à fond.
-				</h2>
-			</motion.div>
-			<motion.div
-				animate={{ x: [-1000, 0] }}
-				transition={{ duration: 3 }}
-				className="my-8"
-			>
-				{" "}
+				</h2>{" "}
 				<p className={`mb-4 ${jetBrainsMono.className}`}>
 					Bricoleur, kiffeur, aventurier, que sais-je encore… Ai-je votre
 					attention ? Si vous voulez en savoir plus sur moi, il va falloir vous
