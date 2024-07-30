@@ -8,4 +8,4 @@ pnpm dev
 
 ## Pour le voir en vrai:
 
-[Paul Mérandon](paulmerandon.fr)
+paulmerandon.fr
