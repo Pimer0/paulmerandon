@@ -14,23 +14,12 @@ interface ProjetProps {
 }
 
 const Projet = ({ titre, paragraph, lien, id }: ProjetProps) => {
-	const ref = useRef(null);
-	const isInView = useInView(ref, { once: true });
-	const controls = useAnimation();
-
-	useEffect(() => {
-		if (isInView) {
-			controls.start({ x: 0, opacity: 1 });
-		}
-	}, [isInView, controls]);
-
 	return (
 		<motion.div
-			ref={ref}
-			id={id}
 			className="my-8"
-			initial={{ x: -400, opacity: 0 }}
-			animate={controls}
+			initial={{ opacity: 0, x: -100 }}
+			whileInView={{ opacity: 1, x: 0 }}
+			viewport={{ once: true }}
 			transition={{ duration: 1 }}
 		>
 			<h2 className={`mt-6 mb-4 ${playfairDisplay.className}`}>
