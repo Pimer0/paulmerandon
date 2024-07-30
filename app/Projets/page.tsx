@@ -87,7 +87,7 @@ export default function Page() {
 				lien="https://github.com/Pimer0/VoitureDex"
 				id="voitureDex"
 				titre="Application mobile de collection de véhicules - voitureDex"
-				paragraph="Développement d’une application de collection de voiture en fonction de la recherche par plaque d’immatriculation. une Home qui contient une searchBar, une vue qui affiche les infos du véhicule recherché avec la plaque d’immatriculation, un bouton “ajout du véhicule à ma liste” qui au clique envoie les infos obtenues via l’api à une liste de véhicules “vus”, et ouvre la page contenant cette même liste. Une page “list” qui aura un bouton “retour”, pour revenir sur la Home, et une liste déroulante contenant comme dit précédemment la liste des véhicules vus. Tout élément contenu dans la page sera un composant."
+				paragraph="Développement d’une application de collection de voiture en fonction de la recherche par plaque d’immatriculation. Une Home qui contient une searchBar, une vue qui affiche les infos du véhicule recherché avec la plaque d’immatriculation, un bouton “ajout du véhicule à ma liste” qui au clic envoie les infos obtenues via l’api à une liste de véhicules “vus”, et ouvre la page contenant cette même liste."
 			/>
 			<div className="flex flex-row gap-2 flex-wrap">
 				<Skills

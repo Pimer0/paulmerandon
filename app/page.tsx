@@ -9,10 +9,18 @@ import next from "next";
 import Image from "next/image";
 import { animate, motion } from "framer-motion";
 import { inView } from "framer-motion";
+import Example from "./components/pictoOrange";
+import { useEffect } from "react";
+import { useRef } from "react";
 
 export default function Page() {
 	return (
 		<section>
+			<Example srcImage="/assets/round.svg" />
+			<Example srcImage="/assets/spirale-plain.svg" />
+			<Example srcImage="/assets/light.svg" />
+			<Example srcImage="/assets/sparkle.svg" />
+			<Example srcImage="/assets/profile.svg" />
 			<motion.div
 				whileInView={{ opacity: 1, x: 0 }}
 				transition={{ duration: 1 }}
@@ -37,6 +45,7 @@ export default function Page() {
 					de <strong>l'animation et de la 3D</strong>. Bienvenue chez moi !
 				</p>
 			</motion.div>
+
 			<Projet
 				titre="Lexique du crédit - Cofidis"
 				srcImage="/assets/cofidis.mp4"
@@ -67,15 +76,23 @@ export default function Page() {
 				srcImage="/assets/maillageCof.mp4"
 				lienProjet="/Projets/#refonteMaillage"
 			/>
-			<div className="my-8">
+			<motion.div
+				className="my-8"
+				initial={{ opacity: 0, x: -100 }}
+				whileInView={{ opacity: 1, x: 0 }}
+				viewport={{ once: true }}
+				transition={{ duration: 1 }}
+			>
 				<TitleNivDeux text="Mise en conformité de l'accessibilité - Cofidis" />
 				<Image width={200} height={200} src={"/assets/oeil.svg"} alt="oeil" />
 				<LinksProjet lien="/Projets/#accessibilite" />
-			</div>
+			</motion.div>
 			<motion.div
-				animate={{ x: [-1000, 0] }}
-				transition={{ duration: 1 }}
 				className="my-8"
+				initial={{ opacity: 0, x: -100 }}
+				whileInView={{ opacity: 1, x: 0 }}
+				viewport={{ once: true }}
+				transition={{ duration: 1 }}
 			>
 				<TitleNivDeux text="Ce portfolio !" />
 				<Image

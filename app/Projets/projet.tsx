@@ -16,6 +16,7 @@ interface ProjetProps {
 const Projet = ({ titre, paragraph, lien, id }: ProjetProps) => {
 	return (
 		<motion.div
+			id={id}
 			className="my-8"
 			initial={{ opacity: 0, x: -100 }}
 			whileInView={{ opacity: 1, x: 0 }}
