@@ -78,9 +78,11 @@ a {
 	font-family: "JetBrains Mono";
 }
 
+.bg-dynamic {
+}
+
 .prose .anchor {
 	@apply absolute invisible no-underline;
-
 	margin-left: -1em;
 	padding-right: 0.5em;
 	width: 80%;
