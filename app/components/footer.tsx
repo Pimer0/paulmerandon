@@ -35,8 +35,7 @@ export default function Footer() {
 				<li>
 					<a
 						className={`flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100 ${jetBrainsMono.className}`}
-						rel="noopener noreferrer"
-						target="_blank"
+						download="./public/assets/CV_Paul_Merandon.pdf"
 						href=""
 					>
 						<ArrowIcon />

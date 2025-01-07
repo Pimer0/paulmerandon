@@ -8,14 +8,14 @@ import Intro from "./intro";
 import ImageProjet from "./projetCard/imageProjet";
 const projets = [
 	{
-		titre: "Lexique du crédit - Cofidis",
-		srcImage: "/assets/cofidis.mp4",
-		lienProjet: "/Projets/#lexique",
+		titre: "Passportmagician.com",
+		srcImage: "/assets/passport.mp4",
+		lienProjet: "/Projets/#passport",
 	},
 	{
-		titre: "pimerMe",
-		srcImage: "/assets/pimerMe.mp4",
-		lienProjet: "/Projets/#pimerMe",
+		titre: "Lapel",
+		srcImage: "/assets/lapel.mp4",
+		lienProjet: "/Projets/#lapel",
 	},
 	{
 		titre: "Service de micro blogging",
@@ -23,15 +23,22 @@ const projets = [
 		lienProjet: "/Projets/#twitterClone",
 	},
 	{
+		titre: "La facillitation",
+		srcImage: "/assets/facillitation.mp4",
+		lienProjet: "/Projets/#facillitation",
+	},
+	{
 		titre: "Application mobile de collection de véhicules - voitureDex",
 		srcImage: "/assets/voitureDex.mp4",
 		lienProjet: "/Projets/#voitureDex",
 	},
+
 	{
-		titre: "API de gestion de tâches",
-		srcImage: "/assets/apiTodo.mp4",
-		lienProjet: "/Projets/#apiTodo",
+		titre: "Lexique du crédit - Cofidis",
+		srcImage: "/assets/cofidis.mp4",
+		lienProjet: "/Projets/#lexique",
 	},
+
 	{
 		titre: "Refonte maillage interne - Cofidis",
 		srcImage: "/assets/maillageCof.mp4",
@@ -44,11 +51,6 @@ const imageProjets = [
 		titre: "Mise en conformité de l'accessibilité - Cofidis",
 		srcImage: "/assets/oeil.svg",
 		lien: "/Projets/#accessibilite",
-	},
-	{
-		titre: "Ce portfolio !",
-		srcImage: "/assets/spirale.svg",
-		lien: "/Projets/#portfolio",
 	},
 ];
 
